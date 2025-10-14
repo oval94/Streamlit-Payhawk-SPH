@@ -1,0 +1,41 @@
+# Entorno virtual
+.venv/
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de configuración de VS Code
+.vscode/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Configuración de Python específica de PyCharm (si se usa)
+.idea/
+
+# Archivos de bases de datos temporales
+*.sqlite3
+
+# Archivos de dependencias descargadas por pip (si se guardan localmente)
+*.egg-info/
+dist/
+build/
+
+# Archivos de testing
+.coverage
+*.cover
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+.cache
+.pytest_cache/
+
+# Archivos de entorno de Jupyter
+.ipynb_checkpoints/
