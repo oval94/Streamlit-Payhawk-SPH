@@ -14,7 +14,7 @@ def procesar_datos(df_payhawk, df_prinex):
     if 'CÓDIGO REPARTO' not in df_prinex.columns:
         raise ValueError("El archivo PRINEX no es correcto. No se encontró la columna 'CÓDIGO REPARTO'.")
     st.write("✅ Archivos validados correctamente.")
-    st.write("2. Procesando y enriqueciendo datos de PAYHAWK...")
+    st.write("2. Procesando y enriqueciendo datos de PAYHAWK....")
     if 'FECHA ASIENTO' in df_payhawk.columns:
         df_payhawk['FECHA ASIENTO'] = pd.to_datetime(df_payhawk['FECHA ASIENTO'], errors='coerce').dt.strftime('%d/%m/%Y')
     if 'CUENTA' in df_payhawk.columns:
